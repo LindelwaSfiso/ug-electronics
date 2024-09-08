@@ -9,16 +9,19 @@ const config: Config = {
     ],
     theme: {
     	extend: {
-			backgroundPosition: {
-				'center-top': 'top center',
-			},
+    		backgroundPosition: {
+    			'center-top': 'top center'
+    		},
     		backgroundImage: {
     			'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
     			'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))'
     		},
     		animation: {
     			'meteor-effect': 'meteor 5s linear infinite',
-				'zooming': 'zooming 10s ease-in-out infinite'
+    			zooming: 'zooming 10s ease-in-out infinite',
+				'zooming-slow': 'zooming 20s ease-in-out infinite',
+				'accordion-down': 'accordion-down 0.2s ease-out',
+    			'accordion-up': 'accordion-up 0.2s ease-out'
     		},
     		keyframes: {
     			meteor: {
@@ -34,11 +37,33 @@ const config: Config = {
     					opacity: '0'
     				}
     			},
-				zooming: {
-    				'0%': {transform: 'scale(1, 1)'},
-					'50%': {transform: 'scale(1.2, 1.2)'},
-					'100%': {transform: 'scale(1, 1)'},
-				}
+    			zooming: {
+    				'0%': {
+    					transform: 'scale(1, 1)'
+    				},
+    				'50%': {
+    					transform: 'scale(1.2, 1.2)'
+    				},
+    				'100%': {
+    					transform: 'scale(1, 1)'
+    				}
+    			},
+    			'accordion-down': {
+    				from: {
+    					height: '0'
+    				},
+    				to: {
+    					height: 'var(--radix-accordion-content-height)'
+    				}
+    			},
+    			'accordion-up': {
+    				from: {
+    					height: 'var(--radix-accordion-content-height)'
+    				},
+    				to: {
+    					height: '0'
+    				}
+    			}
     		},
     		borderRadius: {
     			lg: 'var(--radius)',

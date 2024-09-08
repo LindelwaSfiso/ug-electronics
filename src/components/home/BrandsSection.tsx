@@ -14,7 +14,7 @@ const BRAND_IMAGES: string[] = [
 
 export default function BrandsSection() {
     return (
-        <Marquee pauseOnHover={true} loop={0}>
+        <Marquee pauseOnHover={true} loop={0} className="my-16">
             {
                 BRAND_IMAGES.map((imgSrc, index) => (
                     <img
