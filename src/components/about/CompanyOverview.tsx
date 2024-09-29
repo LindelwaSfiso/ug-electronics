@@ -88,10 +88,10 @@ export default function CompanyOverview() {
 
             <div className="flex flex-col mt-20 mb-10">
                 <h1 className="text-primary/90 text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none">
-                    Let's Talk
+                    Let&apos;s Talk
                 </h1>
                 <p className="text-base text-muted-foreground mt-4">
-                    Got a project on your mind? Let's discuss about the details.
+                    Got a project on your mind? Let&apos;s discuss about the details.
                 </p>
 
             </div>

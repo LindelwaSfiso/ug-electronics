@@ -79,10 +79,10 @@ export default function ProductsOverView() {
 
             <div className="flex flex-col mt-20 mb-10">
                 <h1 className="text-primary/90 text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none">
-                    Let's Talk
+                    Let&apos;s Talk
                 </h1>
                 <p className="text-base text-muted-foreground mt-4">
-                    Got a project you're building? Contact us today and we can talk about how we can supply you at
+                    Got a project you&apos;re building? Contact us today and we can talk about how we can supply you at
                     affordable prices.
                 </p>
 

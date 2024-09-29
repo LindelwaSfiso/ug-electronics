@@ -116,7 +116,7 @@ export default function ServicesOverView() {
                             </p>
                             <p>
                                 Biometrics in access control refers to using unique physiological or behavioral
-                                characteristics to verify an individual's identity.
+                                characteristics to verify an individual&apos;s identity.
                             </p>
                             <h4 className="text-lg mt-8 font-bold">Benefits:</h4>
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-4 gap-4">
@@ -143,10 +143,10 @@ export default function ServicesOverView() {
 
             <div className="flex flex-col mt-20 mb-10">
                 <h1 className="text-primary/90 text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none">
-                    Let's Talk
+                    Let&apos;s Talk
                 </h1>
                 <p className="text-base text-muted-foreground mt-4">
-                    Got a project on your mind? Let's discuss about the details.
+                    Got a project on your mind? Let&apos;s discuss about the details.
                 </p>
 
             </div>

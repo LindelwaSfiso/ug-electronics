@@ -54,7 +54,7 @@ export default function Header() {
                         className="h-full flex-col text-lg font-medium md:flex md:flex-row md:items-center  md:text-sm ml-auto">
                         {
                             navLinks.map((link, index) => (
-                                <NavLink index={index} link={link}/>
+                                <NavLink key={index} index={index} link={link}/>
                             ))
                         }
                     </div>
@@ -100,7 +100,7 @@ export default function Header() {
 
                         {
                             navLinks.map((link, index) => (
-                                <NavLink2 index={index} link={link}/>
+                                <NavLink2 key={index} index={index} link={link}/>
                             ))
                         }
 
