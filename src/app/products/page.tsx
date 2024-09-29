@@ -1,23 +1,13 @@
-import HomeSlider from "@/components/home/HomeSlider";
-import BrandsSection from "@/components/home/BrandsSection";
-import ServicesMarquee from "@/components/home/ServicesMarquee";
-import ServicesGrid from "@/components/home/ServicesGrid";
+import ProductsHeaderImage from "@/components/products/ProductsHeaderImage";
+import ProductsOverView from "@/components/products/ProductsOverView";
 
 export default function Home() {
     return (
         <div>
 
-            {/* slider section */}
-            <HomeSlider/>
+            <ProductsHeaderImage/>
 
-            {/* services grid */}
-            <ServicesGrid/>
-
-            {/* brands section */}
-            <BrandsSection/>
-
-            {/* brands section */}
-            <ServicesMarquee/>
+            <ProductsOverView/>
 
         </div>
     );

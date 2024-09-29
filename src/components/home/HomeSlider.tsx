@@ -27,21 +27,16 @@ export default function HomeSlider() {
 
     return (
         <AnimatePresence initial={false}>
-            <section className="min-h-[calc(100vh_-_7rem)] z-[0] relative overflow-hidden">
+            <section className="min-h-[calc(70vh_-_7rem)] sm:min-h-[calc(80vh_-_7rem)] md:min-h-[calc(100vh_-_7rem)] z-[0] relative overflow-hidden">
 
-                <motion.img
-                    key={`images_${currentSlide.key}`}
-                    exit={{opacity: 0}}
-                    initial={{opacity: 0.9}}
-                    animate={{opacity: 1}}
-                    transition={{duration: 0.4, ease: "easeInOut"}}
+                <img
                     className="absolute h-full w-full z-[-1] left-0 right-0 object-cover animate-zooming origin-top"
                     src={currentSlide.image}
                     alt={currentSlide.title}/>
 
                 <div className="absolute top-0 left-0 z-[1] bg-gray-800 bg-opacity-70 w-full h-full"/>
 
-                <div className="absolute top-0 h-full w-full z-[20]">
+                <div className="absolute top-0 h-full w-full z-[20] px-4">
                     <div className="mt-16 container mx-auto">
                         <motion.p
                             initial={{y: '-40%', opacity: 0}}

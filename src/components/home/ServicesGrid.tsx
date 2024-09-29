@@ -9,7 +9,7 @@ type ImagesType = {
 
 const images: ImagesType[] = [
     {
-        title: "Network CCTV Cameras",
+        title: "IP CCTV Cameras",
         src: "/products/hikvision-camera-dome.png",
         hoverSrc: "/products/hikvision-camera-1.png"
     },
@@ -18,7 +18,7 @@ const images: ImagesType[] = [
         src: "/products/hikvision-camera-ptz.png",
     },
     {
-        title: "Access Control-Biometric",
+        title: "Access Control",
         src: "/products/hikvision-biometric.png",
     },
     {
@@ -31,15 +31,15 @@ const images: ImagesType[] = [
 export default function ServicesGrid() {
     return (
         <SlideUpTransition>
-            <div className="my-16 grid grid-rows-2 grid-flow-col gap-2 container mx-auto">
+            <div className="my-16 flex flex-col lg:flex-row gap-2 screen-padding">
 
-                <div className="row-span-2 bg-gray-100 flex flex-col p-4 rounded-xl">
+                <div className="flex-1 bg-gray-50 flex flex-col p-8 rounded-xl border border-gray-200">
                     <span
                         className="uppercase text-xs font-bold text-muted-foreground">Comprehensive Security Solutions</span>
-                    <h1 className="text-lg md:text-xl lg:text-2xl text-red-500 font-bold tracking-tight leading-none mt-2">
-                        Protect Your Home/Business
+                    <h1 className="text-primary/90 text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none mt-2">
+                        Protect Your Home & Business
                     </h1>
-                    <p className="text-sm md:text-base text-slate-800 tracking-tight leading-none mt-4">
+                    <p className="text-sm md:text-base text-gray-600 mt-4">
                         Safeguard your home or business with our integrated security systems. Our CCTV cameras provide
                         constant surveillance, deterring potential intruders and capturing crucial footage. Biometric
                         access
@@ -50,22 +50,24 @@ export default function ServicesGrid() {
                     </p>
                 </div>
 
-                {
-                    images.map((image, index) => (
-                        <Link href="/products"
-                              className="relative row-span-1 col-span-1 border border-gray-200 rounded-xl group transition-all ease-in-out hover:border-red-400"
-                              key={index}>
-                            <img
-                                alt={image.title}
-                                src={image.src}
-                                className="h-40 py-2 w-72 object-contain group-hover:scale-110"/>
+                <div className="grid grid-cols-2 gap-2">
+                    {
+                        images.map((image, index) => (
+                            <Link href="/products"
+                                  className="relative border border-gray-200 rounded-xl group transition-all ease-in-out hover:border-red-400 overflow-hidden flex justify-center items-center"
+                                  key={index}>
+                                <img
+                                    alt={image.title}
+                                    src={image.src}
+                                    className="md:h-56 lg:h-40 lg:w-48 xl:w-64 py-2 object-contain group-hover:scale-110"/>
 
-                            <p className="absolute bottom-0 p-2 bg-gray-100 backdrop-blur-sm w-full text-sm md:text-base rounded-b-xl border border-gray-200 group-hover:bg-red-100 group-hover:border-0">
-                                {image.title}
-                            </p>
-                        </Link>
-                    ))
-                }
+                                <p className="absolute bottom-0 p-2 bg-gray-50 text-gray-500 backdrop-blur-sm w-full text-sm md:text-base rounded-b-xl border border-gray-200 group-hover:bg-red-100 group-hover:border-0">
+                                    {image.title}
+                                </p>
+                            </Link>
+                        ))
+                    }
+                </div>
 
             </div>
         </SlideUpTransition>

@@ -22,9 +22,9 @@ export default function ServicesMarquee() {
                     <p className="py-10 text-4xl md:text-5xl lg:text-6xl font-extrabold w-[100%] px-16 bg-gradient-to-t from-black/50"
                        style={{
                            color: 'color',
-                           "-webkit-text-fill-color": "transparent", /* Will override color (regardless of order) */
-                           "-webkit-text-stroke-width": "2px",
-                           "-webkit-text-stroke-color": "white",
+                           WebkitTextFillColor: "transparent",
+                           WebkitTextStrokeWidth: "2px",
+                           WebkitTextStrokeColor: "white",
                            fontFamily: "Poppins"
                        }}
                        key={index}>

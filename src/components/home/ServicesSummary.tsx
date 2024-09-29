@@ -8,63 +8,70 @@ import {
     IconHelp,
     IconRouteAltLeft,
     IconTerminal2,
-    IconCamera
+    IconCamera,
+    IconDoor,
+    IconHomeBolt,
+    IconBellRinging,
+    IconCircuitMotor,
+    IconFingerprint,
+    IconDeviceLaptop,
+    IconBuildingWarehouse
 } from "@tabler/icons-react";
 
 export function ServicesSummary() {
     const features = [
         {
-            title: "Built for developers",
+            title: "CCTV Camera Systems",
             description:
-                "Built for engineers, developers, dreamers, thinkers and doers.",
+                "Professional installation and maintenance of high-quality surveillance cameras for constant monitoring.",
             icon: <IconCamera/>,
         },
         {
-            title: "Ease of use",
+            title: "Garage Motors",
             description:
-                "It's as easy as using an Apple, and as expensive as buying one.",
-            icon: <IconEaseInOut/>,
+                "Supply and installation of reliable garage motors for smooth and secure operation.",
+            icon: <IconDoor/>,
         },
         {
-            title: "Pricing like no other",
+            title: "Electric Fence",
             description:
-                "Our prices are best in the market. No cap, no lock, no credit card required.",
-            icon: <IconCurrencyDollar/>,
+                "Robust electric fencing solutions to deter intruders and protect your property.",
+            icon: <IconHomeBolt/>,
         },
         {
-            title: "100% Uptime guarantee",
-            description: "We just cannot be taken down by anyone.",
-            icon: <IconCloud/>,
+            title: "Alarm Systems",
+            description: "Advanced alarm systems providing immediate alerts in case of any security breach.",
+            icon: <IconBellRinging/>,
         },
         {
-            title: "Multi-tenant Architecture",
-            description: "You can simply share passwords instead of buying new seats",
-            icon: <IconRouteAltLeft/>,
+            title: "Gate Motors",
+            description: "High-quality gate motors ensuring automated and secure access to your premises.",
+            icon: <IconCircuitMotor/>,
         },
         {
-            title: "24/7 Customer Support",
+            title: "Access Control - Biometric",
             description:
-                "We are available a 100% of the time. Atleast our AI Agents are.",
-            icon: <IconHelp/>,
+                "Cutting-edge biometric systems for accurate and secure access control.",
+            icon: <IconFingerprint/>,
         },
         {
-            title: "Money back guarantee",
+            title: "PC and Laptop Repairs",
             description:
-                "If you donot like EveryAI, we will convince you to like us.",
-            icon: <IconAdjustmentsBolt/>,
+                "Expert repair services for PCs and laptops to keep your devices running smoothly.",
+            icon: <IconDeviceLaptop/>,
         },
         {
-            title: "And everything else",
-            description: "I just ran out of copy ideas. Accept my sincere apologies",
-            icon: <IconHeart/>,
+            title: "IT Equipment Supply",
+            description: "Supply of essential IT networking equipment to ensure seamless connectivity and performance.",
+            icon: <IconBuildingWarehouse/>,
         },
     ];
     return (
-        <div className="flex flex-col gap-y-4 container mx-auto my-24">
+        <div className="screen-padding flex flex-col gap-y-4 my-12 mb-0 md:my-16">
             <h1 className="text-primary/90 text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none">
                 Services We Offered
             </h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-10 py-10 max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  relative z-10 py-10 max-w-7xl">
                 {features.map((feature, index) => (
                     <Feature key={feature.title} {...feature} index={index}/>
                 ))}

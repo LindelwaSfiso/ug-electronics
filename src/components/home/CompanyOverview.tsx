@@ -8,13 +8,13 @@ import {
 
 export default function CompanyOverview() {
     return (
-        <div className="container mx-auto my-32">
+        <div className="screen-padding my-32">
 
             <h1 className="text-primary/90 text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none">
                 Company Overview
             </h1>
 
-            <div className="flex flex-row w-full pr-10 gap-x-24 mt-8">
+            <div className="flex flex-col gap-y-4 lg:flex-row w-full md:pr-10 gap-x-24 mt-8 md:ps-4">
 
                 <div className="flex-1">
 
@@ -60,25 +60,25 @@ export default function CompanyOverview() {
                 </div>
 
 
-                <div className={"w-96 h-80"}>
+                <div className={"mt-10 lg:mt-5 w-[86%] h-80 lg:w-96 lg:h-80"}>
                     <ImagesCardStack
                         offset={20}
                         scaleFactor={0.1}
                         items={[
                             {
-                                id: "image-1",
+                                id: 1,
                                 content: <CompanyOverviewImage
                                     src={"/company/ug-electronics-2.jpg"}
                                     title={""}/>
                             },
                             {
-                                id: "image-1",
+                                id: 2,
                                 content: <CompanyOverviewImage
                                     src={"/company/ug-electronics-1.jpg"}
                                     title={""}/>
                             },
                             {
-                                id: "image-1",
+                                id: 3,
                                 content: <CompanyOverviewImage
                                     src={"/company/ug-electronics-3.jpg"}
                                     title={""}/>

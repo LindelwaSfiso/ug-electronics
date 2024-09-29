@@ -1,10 +1,10 @@
 export default function StickyHeader() {
     return (
         <div
-            className="h-10 w-full border-b border-red-200 bg-red-50">
+            className="md:h-10 w-full border-b border-red-200 bg-red-50">
 
             <div className="h-full container mx-auto flex flex-row items-center justify-between">
-                <div className="flex gap-5 flex-row items-center">
+                <div className="py-2 md:py-0 flex gap-2 md:gap-5 w-full flex-col md:flex-row items-center">
                     <p className="flex items-center text-sm font-normal text-gray-500 dark:text-gray-400">
                         <span
                             className="inline-flex p-1 me-3 bg-red-200 rounded-full dark:bg-gray-600 w-6 h-6 items-center justify-center flex-shrink-0">
@@ -30,22 +30,6 @@ export default function StickyHeader() {
                                  fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"
                                  strokeLinejoin="round"
                                  className="w-3 h-3 text-red-500 dark:text-gray-400">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/><path
-                                d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"/><path
-                                d="M3 7l9 6l9 -6"/>
-                            </svg>
-                            <span className="sr-only">Email</span>
-                        </span>
-                        <a href="mailto:ugelectronics7@gmail.com">ugelectronics7@gmail.com</a>
-                    </p>
-
-                    <p className="flex items-center text-sm font-normal text-gray-500 dark:text-gray-400">
-                        <span
-                            className="inline-flex p-1 me-3 bg-red-200 rounded-full dark:bg-gray-600 w-6 h-6 items-center justify-center flex-shrink-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                 fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"
-                                 strokeLinejoin="round"
-                                 className="w-3 h-3 text-red-500 dark:text-gray-400">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                                 <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/>
                                 <path
@@ -55,8 +39,24 @@ export default function StickyHeader() {
                         </span>
                         <span>Mbabane, Opposite HiFiCorp</span>
                     </p>
+
+                    <p className="flex items-center text-sm font-normal text-gray-500 dark:text-gray-400">
+                        <span
+                            className="inline-flex p-1 me-3 bg-red-200 rounded-full dark:bg-gray-600 w-6 h-6 items-center justify-center flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                 fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"
+                                 strokeLinejoin="round"
+                                 className="w-3 h-3 text-red-500 dark:text-gray-400">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/><path
+                                d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"/><path
+                                d="M3 7l9 6l9 -6"/>
+                            </svg>
+                            <span className="sr-only">Email</span>
+                        </span>
+                        <a href="mailto:ugelectronics7@gmail.com">ugelectronics7@gmail.com</a>
+                    </p>
                 </div>
-                <div className="flex mt-4 sm:justify-center sm:mt-0">
+                <div className="hidden md:flex mt-4 sm:justify-center sm:mt-0">
                     <a href="https://www.facebook.com/UmfeziGroup/" className="text-gray-500 group transition-all p-1 bg-red-200 hover:bg-gray-900 rounded-full">
                         <svg className="w-4 h-4 text-red-500 group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                              fill="currentColor" viewBox="0 0 8 19">

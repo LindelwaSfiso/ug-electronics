@@ -40,7 +40,7 @@ export default function HomeSliderButtons(
 
     return (
         <div
-            className="absolute flex flex-row justify-between items-center bottom-4 right-0 left-0 mx-auto container z-[20]">
+            className="px-4 absolute flex flex-row justify-between items-center bottom-4 right-0 left-0 mx-auto container z-[20]">
             <div>
 
                 <button type="button" onClick={() => onButtonClick("prev")}
